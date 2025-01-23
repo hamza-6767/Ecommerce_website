@@ -7,7 +7,7 @@ import { ShoppingCart } from 'lucide-react';
 import { Trash2 } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { urlFor } from '../sanity/lib/client';
-import getStripe from '../lib/getStripe';
+import getStripe from '../lib/getstripe';
 
 
 const Cart = () => {

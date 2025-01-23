@@ -4,7 +4,7 @@ import React, { useState} from 'react';
 
 import { Minus, Plus, Star, StarOff } from 'lucide-react';
 
-import { Product } from './Product';
+import  Product  from './Product';
 import { urlFor } from '../sanity/lib/client';
 
 import {useStateContext} from '../context/StateContext'

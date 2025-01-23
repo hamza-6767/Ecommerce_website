@@ -3,8 +3,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { ShoppingCart } from 'lucide-react';
-import { useStateContext } from '@/context/StateContext';
-import Cart from '@/components/Cart'
+import { useStateContext } from '../context/StateContext';
+import Cart from '../components/Cart'
 
 const Navbar = () => {
   const { showCart, setShowCart, totalQuantities } = useStateContext();
@@ -28,22 +28,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-// const Navbar = () => {
-//   const { showCart, setShowCart, totalQuantities } = useStateContext();
-
-//   return (
-//     <div className="navbar-container">
-//       <p className="logo">
-//         <Link href="/">JSM Headphones</Link>
-//       </p>
-
-//       <button type="button" className="cart-icon" onClick={() => setShowCart(true)}>
-//         <AiOutlineShopping />
-//         <span className="cart-item-qty">{totalQuantities}</span>
-//       </button>
-
-//       {showCart && <Cart />}
-//     </div>
-//   )
-// }
-

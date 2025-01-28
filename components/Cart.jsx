@@ -8,7 +8,7 @@ import { Trash2 } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { urlFor } from '../sanity/lib/client';
 import getStripe from '../lib/getstripe';
-
+import { useStateContext } from '../context/StateContext';
 
 const Cart = () => {
     const cartRef = useRef();
